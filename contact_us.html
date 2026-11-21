@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Apex Arena</title>
+  <meta name="description" content="Contact Apex Arena about court bookings, facilities, opening hours and general questions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="Assets/styles/themes.css">
+  <link rel="stylesheet" href="Assets/styles/apex-refresh.css">
+  <link rel="stylesheet" href="Assets/styles/contactus.css">
+  <script src="Assets/scripts/components.js" defer></script>
+  <script src="Assets/scripts/inner.js" defer></script>
+  <script src="Assets/scripts/contact.js" defer></script>
+</head>
+<body>
+  <div id="nav-box"></div>
+  <main class="contact-page">
+    <section class="contact-hero">
+      <p class="contact-kicker">WE'RE HERE TO HELP</p>
+      <h1>Let's get you <span class="contact-title-accent">back in the game.</span></h1>
+      <p class="contact-intro">Questions about a court, a booking or your visit? Send the team a message and check the quick answers below.</p>
+    </section>
+    <section class="contact-layout">
+      <div class="contact-panel contact-details" data-reveal>
+        <p class="contact-kicker">CONTACT DETAILS</p>
+        <h2>Talk to the arena</h2>
+        <p class="contact-intro">Reach out about court availability, booking changes, facilities or general feedback.</p>
+        <div class="contact-detail"><span class="detail-icon">⌖</span><div><strong>Location</strong><p>Cyber Sports Complex, Karachi, Pakistan</p></div></div>
+        <div class="contact-detail"><span class="detail-icon">◷</span><div><strong>Opening hours</strong><p>Every day · 7:00 AM – 10:00 PM</p></div></div>
+        <div class="contact-detail"><span class="detail-icon">✉</span><div><strong>Booking support</strong><p>Use the message form for booking questions. Include your booking ID if you have one.</p></div></div>
+        <a class="contact-book" href="booking.html">Book a court <span>→</span></a>
+      </div>
+      <div class="contact-panel" data-reveal>
+        <p class="contact-kicker">SEND A MESSAGE</p>
+        <h2>How can we help?</h2>
+        <p class="contact-intro">Share a few details and the team will be able to understand how best to assist you.</p>
+        <div id="c-success" class="contact-success" role="status" hidden></div>
+        <form id="contact-form" novalidate>
+          <label for="c-name">Your name</label>
+          <input class="input" id="c-name" name="name" type="text" autocomplete="name" placeholder="e.g. Alex Morgan" required>
+          <span class="field-error" id="e-name"></span>
+          <label for="c-email">Email address</label>
+          <input class="input" id="c-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          <span class="field-error" id="e-email"></span>
+          <label for="c-topic">What is this about?</label>
+          <select class="input" id="c-topic" name="topic">
+            <option value="Booking question">Booking question</option>
+            <option value="Court availability">Court availability</option>
+            <option value="Facilities">Facilities</option>
+            <option value="Feedback">Feedback</option>
+            <option value="Other">Other</option>
+          </select>
+          <label for="c-msg">Message</label>
+          <textarea class="input" id="c-msg" name="message" rows="5" placeholder="Tell us how we can help..." required></textarea>
+          <span class="field-error" id="e-msg"></span>
+          <button class="contact-submit" type="submit">Send message <span>→</span></button>
+          <p class="contact-note">For booking enquiries, include your booking reference so the team can assist you faster.</p>
+        </form>
+      </div>
+    </section>
+    <section class="contact-faq" data-reveal>
+      <p class="contact-kicker">QUICK ANSWERS</p>
+      <h2>Frequently asked questions</h2>
+      <div class="qa"><button class="ask" type="button" aria-expanded="false">How do I book a court?<span class="ask-icon">＋</span></button><div class="answer"><p class="answer-text">Open Book Now, choose a sport, court, date and consecutive available hours, then enter your details and confirm.</p></div></div>
+      <div class="qa"><button class="ask" type="button" aria-expanded="false">When do I pay?</button><div class="answer"><p class="answer-text">Payment is collected at the arena front desk when you arrive for your session.</p></div></div>
+      <div class="qa"><button class="ask" type="button" aria-expanded="false">Can I cancel a booking?</button><div class="answer"><p class="answer-text">Open the My Bookings section and follow the cancellation options for your reservation.</p></div></div>
+      <div class="qa"><button class="ask" type="button" aria-expanded="false">Can I change an existing booking?</button><div class="answer"><p class="answer-text">Contact the arena team with your booking details and preferred change. Requests are subject to court availability.</p></div></div>
+    </section>
+  </main>
+  <div id="footer-box"></div>
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Arena - Book Your Court</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,700;1,800&family=Barlow:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="Assets/styles/themes.css">
+  <link rel="stylesheet" href="Assets/styles/apex-refresh.css">
+  <link rel="stylesheet" href="Assets/styles/index.css">
+
+  <script src="Assets/scripts/components.js" defer></script>
+  <script src="Assets/scripts/index.js" defer></script>
+</head>
+
+<body>
+
+  <div id="loader" class="loader">
+    <div class="court-lines"><div class="court-circle"></div><div class="court-line"></div></div>
+    <div class="loader-box">
+      <div class="ball-box">
+        <div class="ball"><span class="seam-a"></span><span class="seam-b"></span></div>
+        <div class="shadow"></div>
+      </div>
+      <div class="loader-name">APEX <span>ARENA</span></div>
+      <div class="bar"><div class="bar-fill"></div></div>
+      <p>Warming up the courts</p>
+    </div>
+  </div>
+
+  <div id="nav-box"></div>
+
+  <main>
+    <section class="hero">
+      <div class="hero-dim"></div>
+      <div class="hero-lines"><div class="hero-circle"></div><div class="hero-line"></div></div>
+
+      <div class="hero-inner">
+        <div class="hero-left">
+          <div class="tag"><span></span>Play. Book. Compete.</div>
+
+          <h1 class="hero-title">Your Game.<br><em class="hero-accent">Your Court.</em><br>Your Time.</h1>
+
+          <p class="hero-p">Four sports. One arena. Find your court, choose your time, and get straight to the game.</p>
+
+          <div class="hero-btns">
+            <a href="booking.html" class="btn-main">Book a Court <img class="arrow" src="https://img.icons8.com/ios-filled/50/052e16/long-arrow-right.png" alt=""></a>
+            <a href="#how" class="btn-line">Explore the experience <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-proof">
+            <span><i></i> Easy online reservations</span>
+            <span><i></i> Courts for every game</span>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <div class="card-top">
+            <div>
+              <p class="card-label">Next available</p>
+              <h3>Find Your Court</h3>
+            </div>
+            <div class="live" title="Live"></div>
+          </div>
+
+          <div class="card-rows">
+            <div class="card-row">
+              <img src="https://img.icons8.com/fluency/96/calendar.png" alt="Calendar">
+              <div class="card-row-text"><small>Date</small><strong>Choose your date</strong></div>
+            </div>
+            <div class="card-row">
+              <img src="https://img.icons8.com/fluency/96/clock.png" alt="Clock">
+              <div class="card-row-text"><small>Next slot</small><strong>Flexible time slots</strong></div>
+            </div>
+            <div class="card-row">
+              <img src="https://img.icons8.com/fluency/96/stadium.png" alt="Stadium">
+              <div class="card-row-text"><small>Availability</small><strong class="free">Multiple courts to choose from</strong></div>
+            </div>
+          </div>
+
+          <a href="booking.html" class="card-btn">Check Availability <img class="arrow" src="https://img.icons8.com/ios-filled/50/4ade80/long-arrow-right.png" alt=""></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stats-inner">
+        <div class="stat"><strong>4</strong><span>Sports Available</span></div>
+        <div class="stat"><strong>12+</strong><span>Premium Courts</span></div>
+        <div class="stat"><strong>500+</strong><span>Active Players</span></div>
+        <div class="stat"><strong>7</strong><span>Days a Week</span></div>
+      </div>
+    </section>
+
+    <section id="games" class="sports">
+      <div class="head">
+        <div>
+          <p class="kicker">Choose your game</p>
+          <h2>Find Your Perfect Court</h2>
+        </div>
+        <p class="head-text">From fast-paced futsal to competitive badminton, there's a court waiting for your next game.</p>
+      </div>
+
+      <div class="cards">
+
+        <a href="badminton.html" class="card">
+          <div class="card-img">
+            <img src="Assets/images/badminton-hero.png" alt="Badminton player on the Apex Arena court" class="photo">
+            <span class="price">From $15/hr</span>
+          </div>
+          <div class="card-body">
+            <h3>Badminton</h3>
+            <p class="card-p">Fast rallies, great cardio, and a court ready for your next match.</p>
+            <div class="card-foot"><span>Indoor Court</span><strong>Explore <img class="arrow" src="https://img.icons8.com/ios-filled/50/4ade80/long-arrow-right.png" alt=""></strong></div>
+          </div>
+        </a>
+
+        <a href="basketball.html" class="card">
+          <div class="card-img">
+            <img src="Assets/images/basketball-hero.png" alt="Basketball players competing on court" class="photo">
+            <span class="price">From $30/hr</span>
+          </div>
+          <div class="card-body">
+            <h3>Basketball</h3>
+            <p class="card-p">Bring your team together and own the court from tip-off to final whistle.</p>
+            <div class="card-foot"><span>Full Court</span><strong>Explore <img class="arrow" src="https://img.icons8.com/ios-filled/50/4ade80/long-arrow-right.png" alt=""></strong></div>
+          </div>
+        </a>
+
+        <a href="futsal.html" class="card">
+          <div class="card-img">
+            <img src="Assets/images/futsal-hero.png" alt="Futsal players competing indoors" class="photo">
+            <span class="price">From $40/hr</span>
+          </div>
+          <div class="card-body">
+            <h3>Futsal</h3>
+            <p class="card-p">High-energy football action in a fast and competitive arena.</p>
+            <div class="card-foot"><span>5v5 Field</span><strong>Explore <img class="arrow" src="https://img.icons8.com/ios-filled/50/4ade80/long-arrow-right.png" alt=""></strong></div>
+          </div>
+        </a>
+
+        <a href="volleyball.html" class="card">
+          <div class="card-img">
+            <img src="Assets/images/volleyball-hero.png" alt="Volleyball match at Apex Arena" class="photo">
+            <span class="price">From $25/hr</span>
+          </div>
+          <div class="card-body">
+            <h3>Volleyball</h3>
+            <p class="card-p">Serve, spike, and compete on a court built for your team.</p>
+            <div class="card-foot"><span>Indoor Court</span><strong>Explore <img class="arrow" src="https://img.icons8.com/ios-filled/50/4ade80/long-arrow-right.png" alt=""></strong></div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+    <section id="how" class="how">
+      <div class="how-head">
+        <p class="kicker">Simple and fast</p>
+        <h2>From Booking to Playing</h2>
+        <p class="how-text">Getting on the court has never been easier.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <img class="step-img" src="https://img.icons8.com/fluency/96/trophy.png" alt="Trophy">
+          <span class="step-no">Step 1</span>
+          <h3>Choose Your Sport</h3>
+          <p>Browse our available sports and select the court that fits your game.</p>
+        </div>
+
+        <div class="step-line"></div>
+
+        <div class="step">
+          <img class="step-img" src="https://img.icons8.com/fluency/96/calendar.png" alt="Calendar">
+          <span class="step-no">Step 2</span>
+          <h3>Select a Time</h3>
+          <p>Check available slots and choose a time that works for your team.</p>
+        </div>
+
+        <div class="step-line"></div>
+
+        <div class="step">
+          <img class="step-img" src="https://img.icons8.com/fluency/96/lightning-bolt.png" alt="Lightning bolt">
+          <span class="step-no">Step 3</span>
+          <h3>Show Up and Play</h3>
+          <p>Reserve your spot, receive your booking pass, and get ready to play.</p>
+        </div>
+      </div>
+    </section>
+    <section class="why">
+      <div class="why-box">
+
+        <div class="why-photo">
+          <img src="Assets/images/futsal-hero.png" alt="Players competing inside the Apex Arena sports complex">
+        </div>
+
+        <div class="why-text">
+          <p class="kicker">Built for players</p>
+          <h2>Your Next Match Is Just One Booking Away.</h2>
+          <p class="why-intro">No complicated booking process. Find your court, reserve your slot, and focus on what really matters: playing the game.</p>
+
+          <div class="perks">
+            <div class="perk">
+              <img class="tick" src="https://img.icons8.com/fluency/96/checkmark.png" alt="Check">
+              <div class="perk-text"><h4>Quick Reservations</h4><p>Book your preferred court in just a few clicks.</p></div>
+            </div>
+            <div class="perk">
+              <img class="tick" src="https://img.icons8.com/fluency/96/checkmark.png" alt="Check">
+              <div class="perk-text"><h4>Flexible Scheduling</h4><p>Choose a time that works best for you and your team.</p></div>
+            </div>
+            <div class="perk">
+              <img class="tick" src="https://img.icons8.com/fluency/96/checkmark.png" alt="Check">
+              <div class="perk-text"><h4>Made for Teams</h4><p>Plan your next game and get everyone on the court.</p></div>
+            </div>
+          </div>
+
+          <a href="#games" class="btn-main">Explore Courts <img class="arrow" src="https://img.icons8.com/ios-filled/50/052e16/long-arrow-right.png" alt=""></a>
+        </div>
+
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="head center reviews-head">
+        <div>
+          <p class="kicker">Player stories</p>
+          <h2>What Players Say</h2>
+        </div>
+      </div>
+
+      <div class="review-grid">
+
+        <article class="review">
+          <img class="quote" src="https://img.icons8.com/ios-filled/100/22c55e/quote-left.png" alt="Quote">
+          <p class="review-text">The booking process was incredibly easy. We picked our time, showed up, and got straight into our game.</p>
+          <div class="person">
+            <div class="avatar">AM</div>
+            <div class="person-name"><strong>Alex M.</strong><span>Badminton Player</span></div>
+          </div>
+        </article>
+
+        <article class="review">
+          <img class="quote" src="https://img.icons8.com/ios-filled/100/22c55e/quote-left.png" alt="Quote">
+          <p class="review-text">Finally, a simple way to organize court time for our team. Checking availability is quick and straightforward.</p>
+          <div class="person">
+            <div class="avatar">SK</div>
+            <div class="person-name"><strong>Sarah K.</strong><span>Basketball Player</span></div>
+          </div>
+        </article>
+
+        <article class="review">
+          <img class="quote" src="https://img.icons8.com/ios-filled/100/22c55e/quote-left.png" alt="Quote">
+          <p class="review-text">Great courts and an easy booking experience. Everything we need to get our weekly games organized.</p>
+          <div class="person">
+            <div class="avatar">DL</div>
+            <div class="person-name"><strong>David L.</strong><span>Futsal Player</span></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="faq-head">
+        <p class="kicker">Need help?</p>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-list">
+
+        <div class="qa">
+          <button class="ask"><span>How do I pay for my booking?</span><img class="plus" src="https://img.icons8.com/ios-filled/50/4ade80/plus-math.png" alt=""></button>
+          <div class="answer"><p>Payment is handled directly on-site when you arrive for your scheduled slot.</p></div>
+        </div>
+
+        <div class="qa">
+          <button class="ask"><span>Can I book slots for multiple people?</span><img class="plus" src="https://img.icons8.com/ios-filled/50/4ade80/plus-math.png" alt=""></button>
+          <div class="answer"><p>Yes. During the booking process, you can specify the number of players attending your session.</p></div>
+        </div>
+
+        <div class="qa">
+          <button class="ask"><span>What do I need to bring when I arrive?</span><img class="plus" src="https://img.icons8.com/ios-filled/50/4ade80/plus-math.png" alt=""></button>
+          <div class="answer"><p>Simply bring the digital booking pass generated after your reservation is finalized.</p></div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta-box">
+        <div class="cta-dim"></div>
+        <div class="cta-content">
+        <h2>The Court Is Waiting.</h2>
+        <p>Pick your sport, find your time, and get your next game started.</p>
+        <a href="#games" class="btn-main">Browse Courts <img class="arrow" src="https://img.icons8.com/ios-filled/50/052e16/long-arrow-right.png" alt=""></a>
+      </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-box"></div>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Apex Arena</title>
+  <meta name="description" content="The story, mission, facilities, opening times, events and rules of Apex Arena in Karachi.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,700;1,800&family=Barlow:wght@400;500;600;700&display=swap">
+
+  <link rel="stylesheet" href="Assets/styles/themes.css">
+  <link rel="stylesheet" href="Assets/styles/apex-refresh.css">
+  <link rel="stylesheet" href="Assets/styles/inner.css">
+  <link rel="stylesheet" href="Assets/styles/aboutus.css">
+
+  <script src="Assets/scripts/components.js" defer></script>
+  <script src="Assets/scripts/arena-data.js" defer></script>
+  <script src="Assets/scripts/inner.js" defer></script>
+  <script src="Assets/scripts/aboutus.js" defer></script>
+</head>
+
+<body>
+
+  <div id="nav-box"></div>
+
+  <main>
+    
+    <section class="page-top">
+      <div class="page-lines"><div class="page-circle"></div><div class="page-line"></div></div>
+      <div class="page-inner">
+        <div class="crumbs"><a class="crumb-link" href="index.html">Home</a><span>/</span><span>About Us</span></div>
+        <h1 class="page-title">The arena built <span class="page-title-em">for players.</span></h1>
+        <p class="page-text">Apex Arena started with one simple idea: booking a court should take a minute, not three phone calls. Here is who we are and what we offer.</p>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="two-col">
+        <div data-reveal>
+          <p class="kicker">Our story</p>
+          <h2 class="block-title">From one court to four sports</h2>
+          <p class="block-text">Apex Arena began as a single futsal field. Players kept asking the same questions: what does it cost, are you open, is the 8 PM slot free? Answers lived in a notebook, and double bookings were common.</p>
+          <p class="block-text">Today the complex has twelve premium courts across badminton, basketball, futsal and volleyball, and every answer is on this website. Walk-ins are welcome, but most of our regulars book from their phones.</p>
+        </div>
+        <div class="panel" data-reveal>
+          <p class="kicker">Our mission</p>
+          <h2 class="block-title">Easy to find. Fair to pay. Simple to book.</h2>
+          <p class="block-text">Give students, young adults and local teams in Karachi a clean, safe place to play, with honest availability and one clear price for every hour.</p>
+          <a class="btn-main" href="booking.html">Book a court <img class="arrow" src="https://img.icons8.com/ios-filled/50/052e16/long-arrow-right.png" alt=""></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-stats">
+      <div class="about-stats-inner">
+        <div class="about-stat"><strong class="about-num" data-count="4">0</strong><span class="about-label">Sports available</span></div>
+        <div class="about-stat"><strong class="about-num" data-count="12" data-plus="yes">0</strong><span class="about-label">Premium courts</span></div>
+        <div class="about-stat"><strong class="about-num" data-count="500" data-plus="yes">0</strong><span class="about-label">Active players</span></div>
+        <div class="about-stat"><strong class="about-num" data-count="7">0</strong><span class="about-label">Days a week</span></div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="two-col">
+        <div data-reveal>
+          <p class="kicker">On site</p>
+          <h2 class="block-title">Facilities</h2>
+          <div class="tick-row"><img class="tick-img" src="https://img.icons8.com/fluency/96/checkmark.png" alt=""><span class="tick-text">Floodlit courts for evening games</span></div>
+          <div class="tick-row"><img class="tick-img" src="https://img.icons8.com/fluency/96/checkmark.png" alt=""><span class="tick-text">Changing rooms with lockers and showers</span></div>
+          <div class="tick-row"><img class="tick-img" src="https://img.icons8.com/fluency/96/checkmark.png" alt=""><span class="tick-text">Spectator seating at every court</span></div>
+          <div class="tick-row"><img class="tick-img" src="https://img.icons8.com/fluency/96/checkmark.png" alt=""><span class="tick-text">Equipment hire at the front desk</span></div>
+          <div class="tick-row"><img class="tick-img" src="https://img.icons8.com/fluency/96/checkmark.png" alt=""><span class="tick-text">Free bike and car parking</span></div>
+          <div class="tick-row"><img class="tick-img" src="https://img.icons8.com/fluency/96/checkmark.png" alt=""><span class="tick-text">Drinking water stations on every floor</span></div>
+          <div class="tick-row"><img class="tick-img" src="https://img.icons8.com/fluency/96/checkmark.png" alt=""><span class="tick-text">First-aid kit and trained staff on site</span></div>
+          <div class="tick-row"><img class="tick-img" src="https://img.icons8.com/fluency/96/checkmark.png" alt=""><span class="tick-text">Step-free access to every court</span></div>
+        </div>
+        <div data-reveal>
+          <p class="kicker">Plan your visit</p>
+          <h2 class="block-title">Opening times</h2>
+          
+          <p class="open-badge" id="open-status">Checking...</p>
+          <div class="table-box">
+            <table class="hours-table">
+              <caption class="sr-only">Opening and closing times by day</caption>
+              <thead><tr><th class="th-head" scope="col">Day</th><th class="th-head" scope="col">Opens</th><th class="th-head" scope="col">Closes</th></tr></thead>
+              <tbody>
+                <tr><th class="th-row" scope="row">Monday</th><td class="td-cell">7:00 AM</td><td class="td-cell">10:00 PM</td></tr>
+                <tr><th class="th-row" scope="row">Tuesday</th><td class="td-cell">7:00 AM</td><td class="td-cell">10:00 PM</td></tr>
+                <tr><th class="th-row" scope="row">Wednesday</th><td class="td-cell">7:00 AM</td><td class="td-cell">10:00 PM</td></tr>
+                <tr><th class="th-row" scope="row">Thursday</th><td class="td-cell">7:00 AM</td><td class="td-cell">10:00 PM</td></tr>
+                <tr><th class="th-row" scope="row">Friday</th><td class="td-cell">7:00 AM</td><td class="td-cell">10:00 PM</td></tr>
+                <tr><th class="th-row" scope="row">Saturday</th><td class="td-cell">7:00 AM</td><td class="td-cell">10:00 PM</td></tr>
+                <tr><th class="th-row" scope="row">Sunday</th><td class="td-cell">7:00 AM</td><td class="td-cell">10:00 PM</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="side-note">Every court has the same hours. The last slot starts at 9:00 PM.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="band-inner">
+        <p class="kicker">What is on</p>
+        <h2 class="block-title">Upcoming events</h2>
+        <div class="event-grid">
+          <article class="event" data-reveal>
+            <div class="event-date"><strong class="event-day">28</strong><span class="event-month">Nov</span></div>
+            <div class="event-text"><h3 class="item-title">Apex Futsal Cup</h3><p class="item-text">Eight teams, one night, knockout format on the turf.</p></div>
+          </article>
+          <article class="event" data-reveal>
+            <div class="event-date"><strong class="event-day">05</strong><span class="event-month">Dec</span></div>
+            <div class="event-text"><h3 class="item-title">Badminton Doubles Open</h3><p class="item-text">Open and beginner brackets. Shuttles provided.</p></div>
+          </article>
+          <article class="event" data-reveal>
+            <div class="event-date"><strong class="event-day">12</strong><span class="event-month">Dec</span></div>
+            <div class="event-text"><h3 class="item-title">3x3 Basketball Night</h3><p class="item-text">Half-court tournament with a live scoreboard.</p></div>
+          </article>
+          <article class="event" data-reveal>
+            <div class="event-date"><strong class="event-day">19</strong><span class="event-month">Dec</span></div>
+            <div class="event-text"><h3 class="item-title">Beach Volleyball Social</h3><p class="item-text">Mixed teams, sand courts, and a prize for best team name.</p></div>
+          </article>
+        </div>
+        <p class="side-note">Sample events for this project. Register at the front desk or through the contact page.</p>
+      </div>
+    </section>
+
+    <section class="block" id="rules">
+      <div class="two-col">
+        <div data-reveal>
+          <p class="kicker">Play fair, stay safe</p>
+          <h2 class="block-title">Arena rules and guidelines</h2>
+          <div class="tick-row"><img class="tick-img" src="https://img.icons8.com/fluency/96/checkmark.png" alt=""><span class="tick-text">Arrive 10 minutes early with your booking ID. Slots end on time for the next team.</span></div>
+          <div class="tick-row"><img class="tick-img" src="https://img.icons8.com/fluency/96/checkmark.png" alt=""><span class="tick-text">Wear the right shoes for your court. Metal studs and outdoor shoes are never allowed.</span></div>
+          <div class="tick-row"><img class="tick-img" src="https://img.icons8.com/fluency/96/checkmark.png" alt=""><span class="tick-text">No food on the courts. Water bottles are fine.</span></div>
+          <div class="tick-row"><img class="tick-img" src="https://img.icons8.com/fluency/96/checkmark.png" alt=""><span class="tick-text">Treat staff, referees and other players with respect.</span></div>
+          <div class="tick-row"><img class="tick-img" src="https://img.icons8.com/fluency/96/checkmark.png" alt=""><span class="tick-text">Players under 16 need a guardian on site.</span></div>
+          <div class="tick-row"><img class="tick-img" src="https://img.icons8.com/fluency/96/checkmark.png" alt=""><span class="tick-text">Report any injury or damaged equipment to the front desk straight away.</span></div>
+        </div>
+        <div data-reveal>
+          <p class="kicker">Find us</p>
+          <h2 class="block-title">Location</h2>
+          
+          <div class="map-box" role="img" aria-label="Map placeholder for Cyber Sports Complex, Karachi">
+            <div class="map-circle"></div><div class="map-line"></div>
+            <img class="map-pin" src="https://img.icons8.com/fluency/96/marker.png" alt="">
+            <span class="map-label">Cyber Sports Complex, Karachi</span>
+          </div>
+          <p class="block-text">Cyber Sports Complex, Karachi. Free parking for bikes and cars, and a bus stop within a short walk.</p>
+          <a class="link-green" href="contact_us.html">Get in touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-box"></div>
+
+</body>
+</html>

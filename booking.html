@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Court | Apex Arena</title>
+  <meta name="description" content="Choose a sport, court, date and hours, see live availability and your total, then confirm your booking.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,700;1,800&family=Barlow:wght@400;500;600;700&display=swap">
+
+  <link rel="stylesheet" href="Assets/styles/themes.css">
+  <link rel="stylesheet" href="Assets/styles/apex-refresh.css">
+  <link rel="stylesheet" href="Assets/styles/inner.css">
+  <link rel="stylesheet" href="Assets/styles/booking.css">
+
+  <script src="Assets/scripts/components.js" defer></script>
+  <script src="Assets/scripts/arena-data.js" defer></script>
+  <script src="Assets/scripts/inner.js" defer></script>
+  <script src="Assets/scripts/booking.js" defer></script>
+</head>
+
+<body>
+
+  <div id="nav-box"></div>
+
+  <main>
+    
+    <section class="page-top">
+      <div class="page-lines"><div class="page-circle"></div><div class="page-line"></div></div>
+      <div class="page-inner">
+        <div class="crumbs"><a class="crumb-link" href="index.html">Home</a><span>/</span><span>Booking</span></div>
+        <h1 class="page-title">Book your <span class="page-title-em">court.</span></h1>
+        <p class="page-text">Choose a sport and court, pick a date, tap your free hours and add your details. Red hours are already taken.</p>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="book-grid">
+
+        <div class="book-left" id="form-area">
+          <form id="book-form" novalidate>
+
+            <div class="step-box">
+              <div class="step-head">
+                <div class="step-title-row"><span class="step-num">1</span><h2 class="step-title">Choose your sport</h2></div>
+                <label class="sort-wrap">Sort by
+                  <select class="input sort-select" id="sort">
+                    <option value="default">Featured</option>
+                    <option value="asc">Price: low to high</option>
+                    <option value="desc">Price: high to low</option>
+                    <option value="name">Name: A to Z</option>
+                  </select>
+                </label>
+              </div>
+              <div class="sport-pick" id="sport-pick"></div>
+              <span class="error" id="e-sport"></span>
+            </div>
+
+            <div class="step-box">
+              <div class="step-head"><div class="step-title-row"><span class="step-num">2</span><h2 class="step-title">Pick a court and date</h2></div></div>
+              <div class="field"><span class="label">Court</span><div class="court-pick" id="court-pick" role="group" aria-label="Courts"></div></div>
+              <div class="field"><label class="label" for="date">Date</label><input class="input" type="date" id="date" name="date"><span class="error" id="e-date"></span></div>
+            </div>
+
+            <div class="step-box">
+              <div class="step-head"><div class="step-title-row"><span class="step-num">3</span><h2 class="step-title">Tap your hours</h2></div></div>
+              <p class="hint" id="slot-hint">Choose a sport first.</p>
+              <div class="legend">
+                <span class="legend-item"><span class="legend-dot dot-free"></span>Free</span>
+                <span class="legend-item"><span class="legend-dot dot-pick"></span>Selected</span>
+                <span class="legend-item"><span class="legend-dot dot-taken"></span>Taken</span>
+              </div>
+              <div class="slot-grid" id="slot-grid" role="group" aria-label="Time slots"></div>
+              <span class="error" id="e-slots"></span>
+            </div>
+
+            <div class="step-box">
+              <div class="step-head"><div class="step-title-row"><span class="step-num">4</span><h2 class="step-title">Your details</h2></div></div>
+              <div class="form-grid">
+                <div class="field"><label class="label" for="name">Full name</label><input class="input" id="name" type="text" autocomplete="name" placeholder="Ayesha Khan"><span class="error" id="e-name"></span></div>
+                <div class="field"><label class="label" for="phone">Mobile number</label><input class="input" id="phone" type="tel" autocomplete="tel" placeholder="0300 1234567"><span class="error" id="e-phone"></span></div>
+                <div class="field"><label class="label" for="email">Email</label><input class="input" id="email" type="email" autocomplete="email" placeholder="you@example.com"><span class="error" id="e-email"></span></div>
+                <div class="field"><label class="label" for="players">Number of players</label><input class="input" id="players" type="number" min="1" value="2"><span class="hint" id="players-hint"></span><span class="error" id="e-players"></span></div>
+              </div>
+              <div class="field"><label class="label" for="notes">Notes (optional)</label><textarea class="input" id="notes" rows="2" placeholder="Equipment, team name, special requests..."></textarea></div>
+              <p class="hint">Payment is handled on site when you arrive. Nothing is charged on this website.</p>
+            </div>
+
+            <button class="btn-main btn-wide" type="submit">Confirm booking <img class="arrow" src="https://img.icons8.com/ios-filled/50/052e16/long-arrow-right.png" alt=""></button>
+          </form>
+        </div>
+
+        <aside class="summary" id="summary" aria-live="polite">
+          <div class="summary-top">
+            <div><p class="summary-label">Your booking</p><h3 class="summary-title">Summary</h3></div>
+            <div class="summary-live" title="Live price calculator"></div>
+          </div>
+          <div class="summary-rows">
+            <div class="sum-row"><span class="sum-label">Sport</span><span class="sum-value" id="s-sport">Not chosen</span></div>
+            <div class="sum-row"><span class="sum-label">Court</span><span class="sum-value" id="s-court">-</span></div>
+            <div class="sum-row"><span class="sum-label">Date</span><span class="sum-value" id="s-date">-</span></div>
+            <div class="sum-row"><span class="sum-label">Time</span><span class="sum-value" id="s-time">No hours selected</span></div>
+            <div class="sum-row"><span class="sum-label">Rate</span><span class="sum-value" id="s-rate">-</span></div>
+            <div class="sum-row"><span class="sum-label">Hours</span><span class="sum-value" id="s-hours">0</span></div>
+          </div>
+          <div class="sum-total">
+            <span class="sum-total-label">Total</span>
+            <strong class="sum-total-value" id="s-total">$0</strong>
+          </div>
+          <p class="sum-note">Pay on arrival. Free changes up to 3 hours before your slot. Arrive 10 minutes early with your booking ID.</p>
+        </aside>
+
+      </div>
+    </section>
+
+    <section class="band" id="my-section" hidden>
+      <div class="band-inner">
+        <p class="kicker">Saved in this browser</p>
+        <h2 class="block-title">Your bookings</h2>
+        <div class="my-list" id="my-list"></div>
+        <p class="side-note">Bookings are stored only in this browser and are not shared between devices.</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-box"></div>
+
+</body>
+</html>
